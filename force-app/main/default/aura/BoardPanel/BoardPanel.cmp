@@ -10,7 +10,7 @@
   ]"/>
   <lightning:card title="Word Shuffle">
 
-    <lightning:layout>
+    <lightning:layout horizontalAlign="center">
 
       <lightning:layoutItem padding="around-small">
         <lightning:combobox name="gameMode" label="Game Mode" variant="label-hidden" value="inProgress" options="{!v.modes}" placeholder="Select Game Mode"/>
