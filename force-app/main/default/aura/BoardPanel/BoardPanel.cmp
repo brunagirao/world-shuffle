@@ -13,7 +13,7 @@
     <lightning:layout>
 
       <lightning:layoutItem padding="around-small">
-        <lightning:combobox name="gameMode" label="Game Mode" value="inProgress" options="{!v.modes}" placeholder="Select Game Mode"/>
+        <lightning:combobox name="gameMode" label="Game Mode" variant="label-hidden" value="inProgress" options="{!v.modes}" placeholder="Select Game Mode"/>
       </lightning:layoutItem>
 
       <lightning:layoutItem padding="around-small">
