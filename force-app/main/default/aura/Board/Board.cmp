@@ -1,3 +1,20 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem size="4" padding="around-small">1</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">2</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">3</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">4</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">5</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">6</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">7</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">8</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">9</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">10</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">11</lightning:layoutItem>
+        <lightning:layoutItem size="4" padding="around-small">12</lightning:layoutItem>
+    </lightning:layout>
+
 </aura:component>	
