@@ -6,9 +6,18 @@
     <aura:attribute name="clickCount" type="Integer" default="0"/>
 
     <div class="board">
-        <lightning:layout multipleRows="true">
-            <lightning:layoutItem padding="around-small">WORD: {!v.winWord}</lightning:layoutItem>
-            <lightning:layoutItem padding="around-small">Moves left: {! (3 - v.clickCount)}</lightning:layoutItem>
+        <lightning:layout>
+            <lightning:layoutItem padding="around-small">
+                <div class="slds-text-heading_medium">
+                    WORD: <span class="win-word">{!v.winWord}</span>
+                </div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem padding="around-small">
+                <div class="slds-text-heading_medium">
+                    Moves left: {! (3 - v.clickCount)}
+                </div>
+            </lightning:layoutItem>
         </lightning:layout>
     </div>
 

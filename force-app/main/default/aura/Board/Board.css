@@ -2,3 +2,8 @@
     position: relative;
     background: #F7FAFC;
 }
+
+.THIS .win-word {
+    text-transform: uppercase;
+    font-weight: bold;
+}
