@@ -105,7 +105,22 @@
             "sidewalk",
             "reply"
         ];
+        //randomize the words arrat
+        wordsArray = this.randomizeArray(wordsArray);
+        //return requested words
         return wordsArray.slice(0,count);
+    },
 
+    randomizeArray: function (arr) {
+        const randomArr = arr;
+        //randomize the array
+        for (let i = randomArr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * i);
+            const temp = randomArr[i];
+            randomArr[i] = randomArr[j];
+            randomArr[j] = temp;
+        }
+
+        return randomArr;
     }
 })
