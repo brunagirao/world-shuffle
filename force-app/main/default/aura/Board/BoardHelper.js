@@ -1,5 +1,5 @@
 ({
-    getWords : function(count) {
+    getWords : function (count) {
         if(count > 100) return;
 
         //build an array
@@ -122,5 +122,10 @@
         }
 
         return randomArr;
+    },
+
+    getWinWord: function (arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        return arr[randomIndex];        
     }
 })
