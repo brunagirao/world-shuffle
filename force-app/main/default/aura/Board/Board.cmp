@@ -1,9 +1,12 @@
 <aura:component implements="flexipage:availableForAllPageTypes">
 
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="mode" type="String" default="hard"/>
     <aura:attribute name="words" type="List"/>
     <aura:attribute name="winWord" type="String"/>
     <aura:attribute name="clickCount" type="Integer" default="0"/>
+    <aura:attribute name="blockSize" type="Integer"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
     <div class="board">
         <lightning:layout>
@@ -19,6 +22,15 @@
                 </div>
             </lightning:layoutItem>
         </lightning:layout>
+
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.words}" var="word">
+                <lightning:layoutItem size="{!v.blockSize}" padding="around-small">
+                    {!word}
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+
     </div>
 
 </aura:component>	
