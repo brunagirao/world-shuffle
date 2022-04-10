@@ -8,12 +8,15 @@
         {'label': 'Medium', 'value': 'medium'},
         {'label': 'Hard',   'value': 'hard'  },
   ]"/>
+  <aura:attribute name="selectedMode" type="String"/>
+
   <lightning:card title="Word Shuffle">
 
     <lightning:layout horizontalAlign="center">
 
       <lightning:layoutItem padding="around-small">
-        <lightning:combobox 
+        <lightning:combobox
+          aura:id="gameMode"
           name="gameMode" 
           label="Game Mode"
           variant="label-hidden" 
@@ -24,7 +27,7 @@
       </lightning:layoutItem>
 
       <lightning:layoutItem padding="around-small">
-        <lightning:button variant="brand" label="Start New Game" title="Start New Game" />
+        <lightning:button variant="brand" label="Start New Game" title="Start New Game" onclick="{!c.startGame}"/>
       </lightning:layoutItem>  
 
       <lightning:layoutItem padding="around-small">
@@ -34,5 +37,6 @@
     </lightning:layout>
 
   </lightning:card>
+  <c:Board mode="{!v.selectedMode}"></c:Board>
   
 </aura:component>
