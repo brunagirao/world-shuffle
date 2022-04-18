@@ -12,7 +12,7 @@
 
   <lightning:card title="Word Shuffle">
 
-    <lightning:layout horizontalAlign="center">
+    <lightning:layout horizontalAlign="center" multipleRows="true">
 
       <lightning:layoutItem padding="around-small">
         <lightning:combobox
@@ -33,6 +33,12 @@
       <lightning:layoutItem padding="around-small">
         <lightning:button label="Reshuffle" title="Reshuffle"/>
       </lightning:layoutItem> 
+
+      <aura:if isTrue="{! (v.selectedMode != null)}">
+        <lightning:layoutItem size="12">
+          <c:Board mode="{!v.selectedMode}"></c:Board>
+        </lightning:layoutItem> 
+      </aura:if>
 
     </lightning:layout>
 
