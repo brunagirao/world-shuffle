@@ -19,6 +19,12 @@
 
             <lightning:layoutItem padding="around-small">
                 <div class="slds-text-heading_medium">
+                    {!v.result}
+                </div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem padding="around-small">
+                <div class="slds-text-heading_medium">
                     Moves left: {! (3 - v.clickCount)}
                 </div>
             </lightning:layoutItem>
