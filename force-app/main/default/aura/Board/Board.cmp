@@ -26,7 +26,7 @@
         <lightning:layout multipleRows="true">
             <aura:iteration items="{!v.words}" var="word">
                 <lightning:layoutItem size="{!v.blockSize}" padding="around-small">
-                    {!word}
+                    <c:Block label="{!word}"></c:Block>
                 </lightning:layoutItem>
             </aura:iteration>
         </lightning:layout>
