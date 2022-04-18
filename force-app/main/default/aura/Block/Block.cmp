@@ -3,7 +3,7 @@
     <aura:attribute name="open" type="Boolean" default="false"/>
 
     <!--Block tile container-->
-    <div>
+    <div class="board-block slds-align--absolute-center slds-var-m-around_medium slds-var-p-around_medium">
         <div>{!v.label}</div>
     </div>
 </aura:component>	
