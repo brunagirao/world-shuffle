@@ -37,10 +37,10 @@
 
         if (value === component.get("v.winWord")) {
             component.set("v.result", "YOU WIN");
-            console.log('YOU WIN');
+            helper.disableBoard(component);
         } else if (clickCount === 3) {
             component.set("v.result", "YOU LOSE");
-            console.log('YOU LOSE');
+            helper.disableBoard(component);
         }
         //update clickCount
         component.set("v.clickCount", clickCount);
