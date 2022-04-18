@@ -28,4 +28,21 @@
         component.set("v.winWord", winWord);
 
     }, 
+
+    blockClickHandler : function(component, event, helper) {
+        //count the clicks in the tiles
+        let clickCount = component.get("v.clickCount") + 1;
+        //get event value
+        let value = event.getParam("value");
+
+        if (value === component.get("v.winWord")) {
+            component.set("v.result", "YOU WIN");
+            console.log('YOU WIN');
+        } else if (clickCount === 3) {
+            component.set("v.result", "YOU LOSE");
+            console.log('YOU LOSE');
+        }
+        //update clickCount
+        component.set("v.clickCount", clickCount);
+    }
 })
