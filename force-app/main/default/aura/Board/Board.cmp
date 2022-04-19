@@ -9,6 +9,7 @@
     <aura:attribute name="boardDisabled" type="Boolean" default="false"/>
 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:method name="startGame" action="{!c.doInit}" description="Start new game"></aura:method>
 
     <div class="board">
         <lightning:layout>

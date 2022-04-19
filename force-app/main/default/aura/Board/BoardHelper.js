@@ -135,5 +135,13 @@
 
     enableBoard : function (component) {
         component.set("v.boardDisabled", false);
+    },
+
+    resetBoard : function (component) {
+        this.enableBoard(component);
+        //reset clickCount
+        component.set("v.clickCount",0);
+        //reset result
+        component.set("v.result", "");
     }
 })

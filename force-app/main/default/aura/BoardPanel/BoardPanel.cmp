@@ -27,7 +27,13 @@
       </lightning:layoutItem>
 
       <lightning:layoutItem padding="around-small">
-        <lightning:button variant="brand" label="Start New Game" title="Start New Game" onclick="{!c.startGame}"/>
+        <lightning:button 
+            aura:id="startNewGameButton" 
+            variant="brand" 
+            label="Start New Game" 
+            title="Start New Game" 
+            onclick="{!c.startGame}"
+        />
       </lightning:layoutItem>  
 
       <lightning:layoutItem padding="around-small">
@@ -36,7 +42,7 @@
 
       <aura:if isTrue="{! (v.selectedMode != null)}">
         <lightning:layoutItem size="12">
-          <c:Board mode="{!v.selectedMode}"></c:Board>
+          <c:Board aura:id="boardComp" mode="{!v.selectedMode}"></c:Board>
         </lightning:layoutItem> 
       </aura:if>
 

@@ -27,6 +27,8 @@
         const winWord = helper.getWinWord(words);
         component.set("v.winWord", winWord);
 
+        //reset board
+        helper.resetBoard(component);
     }, 
 
     blockClickHandler : function(component, event, helper) {
