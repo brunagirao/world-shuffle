@@ -28,8 +28,10 @@
 
         if(result === "win") {
             component.set("v.reshuffleDisabled", true);
+            helper.showToast("YOU WIN", "Hooray!!", "success");
         } else {
             component.set("v.reshuffleDisabled", false);
+            helper.showToast("YOU LOSE", "Reshuffle the board to keep playing", "error");
         }
         helper.addResultRecord(component, result);
     }
