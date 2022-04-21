@@ -9,6 +9,12 @@
         ];
         //set the columns variable
         component.set("v.columns", columns);
+        //get previous results
+        helper.fetchResult(component);
     },
 
+    onResultHandler : function(component, event, helper) {
+        //get previous results
+        helper.fetchResult(component);
+    }
 })
