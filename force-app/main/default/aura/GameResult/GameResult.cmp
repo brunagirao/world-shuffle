@@ -1,0 +1,2 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="GameResultController">
+</aura:component>	
