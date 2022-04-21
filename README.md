@@ -1,4 +1,22 @@
-# Salesforce DX Project: Next Steps
+
+# Word Shuffle Game
+
+It's a very simple and interesting game in which you have to find the word drawn.
+
+The game has 3 levels: Easy, Medium and Hard.
+
+This game is part of the course [Salesforce Apex Development](https://www.udemy.com/course/salesforce-development/).
+
+![ws_wallpaper](https://user-images.githubusercontent.com/30693791/164496899-6bbe2860-0fb1-4c09-be18-83651bf9881b.png)
+
+
+#### In this project are applied: 
+
+- Programming Fundamentals
+- Apex Development
+- Aura Framework Development
+- SOQL - Salesforce Object Query Language
+- Database Manipulation# Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
@@ -16,3 +34,4 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
