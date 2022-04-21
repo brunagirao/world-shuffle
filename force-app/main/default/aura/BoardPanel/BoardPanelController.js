@@ -23,7 +23,7 @@
         component.set("v.reshuffleDisabled", true);
     },
 
-    onResultHandler : function (component, event) {
+    onResultHandler : function (component, event, helper) {
         const result = event.getParam("result");
 
         if(result === "win") {
@@ -31,6 +31,7 @@
         } else {
             component.set("v.reshuffleDisabled", false);
         }
+        helper.addResultRecord(component, result);
     }
 
 
